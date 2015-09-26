@@ -1,0 +1,2 @@
+version=2
+https://bitbucket.org/mpyne/game-music-emu/downloads .*/(\d\S*)\.tar\.gz

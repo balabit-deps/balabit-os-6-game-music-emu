@@ -1,0 +1,61 @@
+game-music-emu (0.6.0-3) unstable; urgency=medium
+
+  * debian/patches/03_link-zlib.patch:
+    + Link the library with zlib as required.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 26 Sep 2015 11:05:22 +0200
+
+game-music-emu (0.6.0-2) unstable; urgency=medium
+
+  * debian/control,
+    debian/copyright:
+    + Fix homepage URL to point to bitbucket too.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 19 Sep 2015 18:51:44 +0200
+
+game-music-emu (0.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/watch:
+    + Fix watch file for new home of the project at github (Closes: #698177).
+  * debian/patches/01_enable-zlib.patch,
+    debian/patches/02_zlib-compiler-warnings.patch:
+    + Enable zlib support (Closes: #640287).
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 19 Sep 2015 18:08:53 +0200
+
+game-music-emu (0.5.5-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add multi-arch support based on a patch by Francois Gouget (Closes:
+    #777070)
+    + debian/control: Bump B-D on debhelper to (>= 9) and add M-A: same.
+    + debian/compat: Bump to 9.
+    + debian/libgme0.install, debian/libgme-dev.install: Update for new paths.
+    + debian/rules: Move files to multi-arch location.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Wed, 22 Jul 2015 23:59:08 +0200
+
+game-music-emu (0.5.5-2) unstable; urgency=low
+
+  * debian/control,
+    debian/compat,
+    debian/source/format,
+    debian/rules:
+    + Update to source format 3.0 (quilt).
+    + Update Standards-Version to 3.8.4.
+    + Update to debhelper compat level 7.
+  * debian/patches/01_symbol-exports.patch:
+    + Only export symbols that are meant to be public. Patch
+      from upstream SVN.
+  * debian/libgme0.symbols:
+    + Add symbols file.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 22 Mar 2010 14:29:59 +0100
+
+game-music-emu (0.5.5-1) unstable; urgency=low
+
+  * Initial upload (Closes: #540480).
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 08 Aug 2009 10:37:12 +0200
+
