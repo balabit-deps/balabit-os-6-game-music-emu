@@ -1,3 +1,12 @@
+game-music-emu (0.6.0-3ubuntu0.16.04.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: code execution via missing register value clamps
+    - debian/patches/missing_register_value_clamp.patch: clamp values to
+      uint8_t in gme/Spc_Cpu.h.
+    - No CVE number
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Dec 2016 11:37:51 -0500
+
 game-music-emu (0.6.0-3) unstable; urgency=medium
 
   * debian/patches/03_link-zlib.patch:
